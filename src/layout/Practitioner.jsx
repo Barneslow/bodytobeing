@@ -19,7 +19,7 @@ const Practitioner = () => {
 
   const options = {
     opacity: isInView ? 1 : 0,
-    transition: "all 2s ease-in",
+    transition: "all 1.2s ease-in",
   };
 
   return (

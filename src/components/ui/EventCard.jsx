@@ -5,7 +5,7 @@ import Testimonial from "../Testminonal";
 
 import styles from "./Modal.module.css";
 
-const EventCard = ({ data }) => {
+const EventCard = ({ data, index }) => {
   const [open, setOpen] = useState(false);
 
   const openModal = () => {
@@ -18,7 +18,7 @@ const EventCard = ({ data }) => {
 
   return (
     <>
-      <Testimonial data={data} open={openModal} />
+      <Testimonial data={data} open={openModal} delay={index / 3} />
       <AnimatePresence>
         {open && (
           <Backdrop onClick={closeModal}>

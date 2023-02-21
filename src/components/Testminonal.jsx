@@ -9,19 +9,20 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Testimonial = ({ data, open }) => {
+const Testimonial = ({ data, open, delay }) => {
   const { imageUrl } = data;
 
   const ref = useRef(null);
 
   const isInView = useInView(ref, {
-    once: true,
+    once: false,
   });
 
   const options = {
     transform: isInView ? "none" : "translateY(200px)",
     opacity: isInView ? 1 : 0,
-    transition: "all 2s ease-in",
+    transition: "all 1s",
+    transitionDelay: `${delay}s`,
   };
 
   return (

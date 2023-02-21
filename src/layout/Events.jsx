@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <section id="Events" className={styles.container}>
       {data.map((item, index) => (
-        <EventCard key={index} data={item} />
+        <EventCard key={index} data={item} index={index} />
       ))}
     </section>
   );

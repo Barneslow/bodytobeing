@@ -1,0 +1,22 @@
+.instagram {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.instagram:hover {
+  transition: all 0.2s;
+  transform: scale(1.1);
+  filter: brightness(1.1);
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}

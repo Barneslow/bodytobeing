@@ -1,0 +1,45 @@
+.form-input {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+}
+
+.form-input input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: clamp(14px, 2.5vw, 16px);
+  border: none;
+  padding-left: 3rem;
+}
+
+.form-input textarea {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  font-size: clamp(14px, 2.5vw, 16px);
+  border: none;
+  padding: 1rem;
+  resize: none;
+}
+
+.form-input input:focus {
+  outline: none !important;
+}
+
+.form-input textarea:focus {
+  outline: none !important;
+}
+
+.form-input svg {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-size: 30px;
+}
+
+.error-text {
+  color: var(--red);
+  font-size: clamp(14px, 2.5vw, 16px);
+}

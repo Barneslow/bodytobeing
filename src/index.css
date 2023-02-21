@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0.5rem;
+}
+
+:root {
+  --span-size: clamp(0.8rem, 2vw, 1rem);
+  --text-size: clamp(1rem, 2vw, 1.4rem);
+  --subtitle-size: clamp(1.2rem, 3vw, 2.2rem);
+  --title-size: clamp(1.6rem, 3.5vw, 2.8rem);
+  --heading-size: clamp(2.2rem, 5vw, 4rem);
+  --primary-color: #6a4d57;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  height: 20px;
+  width: 20px;
+  background: #6a4d57;
+  opacity: 0.7;
+  border: 1px solid var(--primary-color);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #f9b841;
+  opacity: 1;
+}
+
+.custom-nav {
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  border-radius: 50%;
+  border: none;
+  color: #6a4d57;
+  z-index: 10;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.custom-nav:hover {
+  cursor: pointer;
+  background: #6a4d57;
+  color: white;
+}
+
+.react-calendar {
+  border-radius: 10px;
+  border-color: var(--primary-color);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.react-calendar__tile--active {
+  background: var(--primary-color) !important;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .custom-nav {
+    height: 25px;
+    width: 25px;
+    font-size: 15px;
+  }
+}
